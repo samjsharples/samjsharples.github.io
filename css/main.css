@@ -285,3 +285,20 @@ button:active {
     border-bottom: 3px solid transparent;
     border-top: 3px solid #8F0808;
 }
+h1{
+	margin-right: 100px;
+}
+.admob{
+	display: none;
+}
+@media screen and (max-width:575px){
+	h1{
+		margin-right: 0;
+	}
+	.addesk{
+		display: none
+	}
+	.admob{
+		display: block;
+	}
+}
