@@ -294,6 +294,18 @@ h1{
 .advert{
 	grid-column: span 2;
 }
+.whats_app_button{
+	display: none;
+	background-image: url(../img/wa.png);
+    width: 20px;
+    height: 20px;
+    z-index: 99999;
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    text-indent: -99999px;
+    background-size: 100%;
+}
 @media screen and (max-width:575px){
 	h1{
 		margin-right: 0;
@@ -302,6 +314,9 @@ h1{
 		display: none
 	}
 	.admob{
+		display: block;
+	}
+	.whats_app_button{
 		display: block;
 	}
 }
