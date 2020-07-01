@@ -933,9 +933,11 @@
 			console.log(url);
 			var soundname = elements[i].getElementsByClassName('soundname')[0].textContent;
 			var mylink = '<a class="whats_app_button" href="whatsapp://send?text='+soundname+' https://trainguy.co.uk?f='+url+'"><i>i</i></a>';
+			var twitter = '<a class="share_twitter" href="http://twitter.com/share?text='+soundname+'&url=https://trainguy.co.uk?f='+url+'"><i>i</i></a>';
 			
 				//console.log(mylink);
 				elements[i].innerHTML += mylink;
+				elements[i].innerHTML += twitter;
 		    }
 		    
 		    

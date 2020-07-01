@@ -308,6 +308,18 @@ h1{
     text-indent: -99999px;
     background-size: 100%;
 }
+.share_twitter{
+ 
+	background-image: url(../img/twitter.png);
+    width: 20px;
+    height: 20px;
+    z-index: 99999;
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    text-indent: -99999px;
+    background-size: 100%;
+}
 #thanks{
 	display: none;
     position: absolute;
@@ -354,6 +366,7 @@ h1{
 	footer {
 		display: grid;
 	}
+	 
 }
 @media screen and (max-width:575px){
 	h1{
@@ -366,7 +379,10 @@ h1{
 		display: block;
 	}
 	.whats_app_button{
-	 	display: block
+	 	display: block;
+	}
+	.share_twitter{
+		right: 35px;
 	}
 	
 }
