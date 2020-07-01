@@ -41,7 +41,7 @@
     <main>
 
 	     
-    
+    <a id="thanks"></a>
  
 	<div class="admob advert">
 			<script data-cfasync="false" type="text/javascript" src="https://www.linkonclick.com/a/display.php?r=3463475"></script>
@@ -997,15 +997,9 @@
 			var url_string =  window.location.href;
 			var url = new URL(url_string);
 			var c = url.searchParams.get("f");
+			playAudio(c);
 			
-			
-			var ifrm = document.createElement("iframe");
-			ifrm.setAttribute("src", "https://trainguy.co.uk/"+c);
-			ifrm.setAttribute("allow", "autoplay");
-			ifrm.setAttribute("style", "display: none");
-			ifrm.style.width = "640px";
-			ifrm.style.height = "480px";
-			document.body.appendChild(ifrm);
+			 
 			
 			
 			var elements = document.getElementsByClassName('btn-sound');
@@ -1013,6 +1007,7 @@
 			for (var i = 0; i < elements.length; i++) {
 			
 			var url = elements[i].getAttribute('data-sound');
+			
 			var soundname = elements[i].getElementsByClassName('soundname')[0].textContent;
 			var url = '<a class="whats_app_button" href="whatsapp://send?text='+soundname+' https://trainguy.co.uk?f='+url+'"><i>i</i></a>';
 			
@@ -1021,6 +1016,21 @@
 		    }
 		    
 		    
+		    
+		    window.onload = function() {
+			    if (c !== null) { 
+			    var thanks = document.getElementById('thanks');
+			    var thanksmessage = 'Somebody has sent you a personal message from Train Guy. <span class="playi">Play</span>';
+			    thanks.innerHTML += thanksmessage;
+				thanks.classList.add("show");
+			    thanks.onclick = function() {
+			      playAudio(c);
+			      thanks.classList.remove("show");
+			    };
+			    }
+			};
+
+
 </script>
 
 </body>
