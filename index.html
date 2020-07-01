@@ -39,10 +39,30 @@
     </header>
 
     <main>
+	    <script>
+		    var url_string =  window.location.href;
+var url = new URL(url_string);
+var c = url.searchParams.get("f");
+
+  
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://trainguy.co.uk/mp3/"+c+".mp3");
+        ifrm.setAttribute("allow", "autoplay");
+        ifrm.setAttribute("style", "display: none");
+        ifrm.style.width = "640px";
+        ifrm.style.height = "480px";
+        document.body.appendChild(ifrm);
+   
+</script>
+	     
+    
+ 
 	<div class="admob advert">
 			<script data-cfasync="false" type="text/javascript" src="https://www.linkonclick.com/a/display.php?r=3463475"></script>
 	</div>
-	    <button data-sound="mp3/cya-col-aairgghh.mp3"> <div class="rbn"><b>New</b></div> <img src="img/tg.png" width="50" height="50" alt="Train Guy"> <p>Cya col aairgghh</p> </button>
+	    <button data-sound="mp3/cya-col-aairgghh.mp3"> <div class="rbn"><b>New</b></div> <img src="img/tg.png" width="50" height="50" alt="Train Guy"> <p>Cya col aairgghh</p> 
+	 
+	   </button>
 <button data-sound="mp3/bella-nugato.mp3"> <div class="rbn"><b>New</b></div> <img src="img/tg.png" width="50" height="50" alt="Train Guy"> <p>Bella nugato</p> </button>
 <button data-sound="mp3/you-are-as-always-a-knackered-parrot.mp3"> <div class="rbn"><b>New</b></div> <img src="img/tg.png" width="50" height="50" alt="Train Guy"> <p>You are as always a knackered parrot</p> </button>
 <button data-sound="mp3/well-see-which-one-falls-out-first.mp3"> <div class="rbn"><b>New</b></div> <img src="img/tg.png" width="50" height="50" alt="Train Guy"> <p>We'll see which one falls out first</p> </button>
@@ -959,7 +979,7 @@
                 </li> 
             </ul>
         </div>
-        <div class="about">
+        <div class="about"><a href="whatsapp://send?text=Cya col aairgghh https://trainguy.co.uk?f=cya-col-aairgghh">w</a>
             <p>Version 2 of Train Guy comes with an all-new design, inspired by the iconic <a href="https://www.logodesignlove.com/british-rail-identity">British Rail corporate identity launch poster</a> from 1965.</p>
             <p>Bandwidth problems are still ongoing, but we are working on some mitigation strategies, and will be deploying them in the coming days.</p>
 
