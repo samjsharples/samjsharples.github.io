@@ -291,6 +291,9 @@ h1{
 .admob{
 	display: none;
 }
+.advert{
+	grid-column: span 2;
+}
 @media screen and (max-width:575px){
 	h1{
 		margin-right: 0;
