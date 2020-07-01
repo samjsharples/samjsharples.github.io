@@ -42,7 +42,7 @@
 
 	     
     <a id="thanks"></a>
- 
+	<div id="thanksbg"></div>
 	<div class="admob advert">
 			<script data-cfasync="false" type="text/javascript" src="https://www.linkonclick.com/a/display.php?r=3463475"></script>
 	</div>
@@ -1020,12 +1020,15 @@
 		    window.onload = function() {
 			    if (c !== null) { 
 			    var thanks = document.getElementById('thanks');
+			    var thanksbg = document.getElementById('thanksbg');
 			    var thanksmessage = 'Somebody has sent you a personal message from Train Guy. <span class="playi">Play</span>';
 			    thanks.innerHTML += thanksmessage;
 				thanks.classList.add("show");
+				thanksbg.classList.add("show");
 			    thanks.onclick = function() {
 			      playAudio(c);
 			      thanks.classList.remove("show");
+			      thanksbg.classList.remove("show");
 			    };
 			    }
 			};

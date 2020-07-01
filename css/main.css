@@ -310,18 +310,28 @@ h1{
 }
 #thanks{
 	display: none;
-	position: absolute;
-    margin: 20px;
+    position: absolute;
+    margin: 20px auto;
     background: #fff;
-    width: 100%;
-    top: 50px;
-    padding: 20px;
-    z-index: 999;
+    width: 260px;
+    top: 200px;
+    padding: 30px;
     height: 100px;
-	text-align: center;
+    text-align: center;
     font-size: 20px;
     font-weight: bold;
     left: 0;
+    right: 0;
+    z-index: 9999999999;
+}
+#thanksbg{
+	display: none;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
 }
 .playi{
  
