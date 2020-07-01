@@ -114,8 +114,8 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: 2rem auto 2rem;
+    display: grid; 
+
     grid-template-areas:
         "header header header"
         ". main ."
@@ -175,7 +175,7 @@ main {
 }
 
 footer {
-    display: grid;
+
     grid-area: footer;
     grid-template-columns: 2rem 5fr 2fr 2rem;
     margin-top: 2rem;
@@ -337,6 +337,14 @@ h1{
 .show{
 		display: block !important;
 	}
+@media screen and (min-width:576px){
+	body {
+		grid-template-columns: 2rem auto 2rem;
+	}	
+	footer {
+		display: grid;
+	}
+}
 @media screen and (max-width:575px){
 	h1{
 		margin-right: 0;
