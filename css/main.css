@@ -359,6 +359,7 @@ h1{
 .show{
 		display: block !important;
 	}
+
 @media screen and (min-width:576px){
 	body {
 		grid-template-columns: 2rem auto 2rem;
